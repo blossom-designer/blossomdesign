@@ -300,7 +300,7 @@
             text-shadow: 0 0 8px rgba(177, 13, 201, 0.6);
         }
 
-        /* Обертка для скролла дашборда на мобильных */
+        /* Обертка для скролла дашборда на mobile */
         .dash-scroll-wrapper {
             width: 100%;
             overflow-x: auto;
@@ -371,6 +371,25 @@
         .card p { color: var(--text-muted); margin-bottom: 0; }
 
         footer { background-color: var(--bg-dark); color: var(--text-muted); text-align: center; padding: 40px 20px; border-top: 1px solid var(--border-dark); font-size: 0.9rem; }
+
+        @media (max-width: 900px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.5rem; }
+            .hero { padding: 140px 20px 80px; }
+            .dash-container { 
+                zoom: 0.6; 
+                -moz-transform: scale(0.6); 
+                -moz-transform-origin: top left;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .dash-container { 
+                zoom: 0.45; 
+                -moz-transform: scale(0.45); 
+                -moz-transform-origin: top left;
+            }
+        }
     </style>
 </head>
 <body>
@@ -558,7 +577,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Blossom | Lotus Design. Все права защищены.</p>
+        <p>&copy; 2026 Blossom | Lotus Design.</p>
     </footer>
 
 </body>
